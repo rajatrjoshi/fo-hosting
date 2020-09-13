@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.logoheader {
+    margin: 3px;
+}
+
+
+.header {
+    background-color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: 2px;
+}
+
+.navigation {
+    position: relative;
+    margin-top:10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 22px;
+    -ms-flex-line-pack: center;
+    line-height: 0.7em;
+    padding: 4px;
+    border: 1px solid black;
+    color: black;
+}
+
+.navigationimg {
+    border-radius: 50%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid gray;
+    background-color: white;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 0 10px black;
+}
+
+
+  .btn {
+    position: relative;
+    width: 25%;
+    border: none;
+    outline: 1px solid lightgray;
+    padding: 12px ;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+
+  .icon-bar a:hover {
+    color: white;
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color:black; /* Add an active/current color */
+    color: white;
+  }  
+
+svg {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    fill: black;
+}
+
+.logofooter , .search, .user, .cart{
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+#hotel1, #hotel2, #hotel3, #hotel4, #hotel5, #hotel6, #hotel7 {
+    background-color: white;
+    box-shadow: 2px 5px solid black;
+    margin: 2px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#hotelimage img{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#hotelid {
+    font-family: 'Oxygen' , sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#hotelgenre {
+    font-size: 0.8em;
+    color: black;
+}
+  
+.menubar{
+  color: white;
+  position: fixed;
+  bottom: 65px;
+  left: 40%;
+  background-color: black;
+  width: 95px;
+  height: 35px;
+  padding: 1px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 2px solid black;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 3px 3px 4px 0 gray;
+}
+
+.main-content a:active {
+  text-decoration: none;
+}
+
+
+#addtocart {
+  color: green;
+  background-color: white;
+  width: 75px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  padding: 1px;
+  border: 2px solid lightgray;
+  font-weight: 700;
+  box-shadow: 1px 1px 2px 0 gray;
+}
+
+#browser {
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+
+.searchbtn {
+    position: relative;
+    top: 22px;
+    left: 230px;
+    background-color: green;
+    outline: 2px solid black;
+    color: white;
+    padding: 5px;
+    width: 70px;
+    height: 30px;    
+}
+
+#hotelheader {
+    background: url('./img/hotelimg/madhurheader.jpg') repeat;
+
+}
+
+/* section#hotelid {
+    opacity: 1;
+} */
+
+
+#hotellogo {
+    border-radius: 50%;
+}
+
+hr.gap { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    height: 3px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+   
+  } 
+
+#dgenre {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#hoteladdress {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.vegbar {
+    margin: 0 10px auto ;
+    padding: 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #5cb85c;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5cb85c;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: fixed;
+  left: 45%;
+  bottom: 65px;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px solid lightslategray;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: black;
+  padding: 3px 5px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}

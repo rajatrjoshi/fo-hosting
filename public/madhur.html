@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS file-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    
+    
+    <!--Javascript-->
+    <script>
+        function added() {
+            document.getElementById('addtocart').innerHTML ="Added";
+        }
+
+
+
+        // javascript for menu button
+        function menudrp() {
+  document.getElementById("menubtn").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.menubtn')) {
+    var dropups = document.getElementsByClassName("dropup-content");
+    var i;
+    for (i = 0; i < dropups.length; i++) {
+      var openDropup = dropups[i];
+      if (openDropup.classList.contains('show')) {
+        openDropup.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    
+    
+    </head>
+    <title>madhur</title>
+<body style="background-color:white">
+
+<section id="hotelheader">
+    <img src="img/hotellogo/madhurimg.jpg" id="hotellogo" class="img-thumbnail mx-auto d-block" width="70px" height="70px">
+    <div id="hotelid" class="text-center">
+        Madhur Hotel
+    </div>
+    <div id="hoteladdress"  class="text-center">
+        Shop No.11 & 12, Mahavir Srushti Building, Navapur Rd, Boisar, Maharashtra 401506
+    </div>
+    <br>
+    <hr class="gap"> 
+</section>
+<!--Menu Option And Only Veg Option-->
+<section>
+    <div class="vegbar">
+    <span id="dgenre">Veg only</span>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+</div>
+<hr style="height:2px;border-width:0;color:gray;background-color:lightgray;width: 93%;">
+</section>
+<section class="container">
+<a id="recommended"><h5>Recommended</h5></a>
+<div class="recommendeddish">
+    <span id="mark"> 
+        <img src="img/vegmark.png" width="20px" height="20px">
+    </span><br>
+    <button onclick="added()" type="button" id="addtocart" class="float-right text-center rounded">
+        Add
+    </button>
+    <span id="dishid">
+        Paneer Makhanwala
+    </span><br>
+    <span id="dishprice">
+        ₹160/-
+    </span>
+    <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+</div>
+<div class="recommendeddish">
+    <span id="mark"> 
+        <img src="img/non-vegmark.jpg" width="20px" height="20px">
+    </span><br>
+    <button onclick="added()" type="button" id="addtocart" class="float-right text-center rounded">
+        Add
+    </button>
+    <span id="dishid">
+        Paneer Makhanwala
+    </span><br>
+    <span id="dishprice">
+        ₹160/-
+    </span>
+    <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+</div>
+<div class="recommendeddish">
+    <span id="mark"> 
+        <img src="img/vegmark.png" width="20px" height="20px">
+    </span><br>
+    <button onclick="added()" id="addtocart" type="button" class="float-right text-center rounded">
+        Add
+    </button>
+    <span id="dishid">
+        Paneer Makhanwala
+    </span><br>
+    <span id="dishprice">
+        ₹160/-
+    </span>
+    <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+</div>
+<div class="recommendeddish">
+    <span id="mark"> 
+        <img src="img/vegmark.png" width="20px" height="20px">
+    </span><br>
+    <button onclick="added()" id="addtocart"  type="button" class="float-right text-center rounded">
+        Add
+    </button>
+    <span id="dishid">
+        Paneer Makhanwala
+    </span><br>
+    <span id="dishprice">
+        ₹160/-
+    </span>
+</div>
+</section>
+<hr>
+<hr>
+<section class="container">
+    <a id="starters"><h5>Starters</h5></a>
+    <div class="recommendeddish">
+        <span id="mark"> 
+            <img src="img/vegmark.png" width="20px" height="20px">
+        </span><br>
+        <button onclick="added()" type="button" id="addtocart" class="float-right text-center rounded">
+            Add
+        </button>
+        <span id="dishid">
+            Paneer Burji
+        </span><br>
+        <span id="dishprice">
+            ₹160/-
+        </span>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+    </div>
+    <div class="recommendeddish">
+        <span id="mark"> 
+            <img src="img/non-vegmark.jpg" width="20px" height="20px">
+        </span><br>
+        <button onclick="added()" type="button" id="addtocart" class="float-right text-center rounded">
+            Add
+        </button>
+        <span id="dishid">
+            Chicken Chilli
+        </span><br>
+        <span id="dishprice">
+            ₹160/-
+        </span>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+    </div>
+    <div class="recommendeddish">
+        <span id="mark"> 
+            <img src="img/vegmark.png" width="20px" height="20px">
+        </span><br>
+        <button onclick="added()" id="addtocart" type="button" class="float-right text-center rounded">
+            Add
+        </button>
+        <span id="dishid">
+            Paneer Chilli
+        </span><br>
+        <span id="dishprice">
+            ₹160/-
+        </span>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+    </div>
+    <div class="recommendeddish">
+        <span id="mark"> 
+            <img src="img/vegmark.png" width="20px" height="20px">
+        </span><br>
+        <button onclick="added()" id="addtocart"  type="button" class="float-right text-center rounded">
+            Add
+        </button>
+        <span id="dishid">
+            Manchurian
+        </span><br>
+        <span id="dishprice">
+            ₹160/-
+        </span>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#f1f1f1;">
+    </div>
+    </section>
+<br>
+<br>
+
+
+<!--Menu Bar-->
+<div class="dropup">
+    <button onclick="menudrp()" class="menubar"><i class="fa fa-cutlery" aria-hidden="true">&nbsp; Menu</i></button>
+    <div id="menubtn" class="dropup-content rounded">
+      <a href="#recommended">Recommended</a>
+      <a href="#starters">Starters</a>
+      <a href="#">Breakfast</a>
+    </div>
+  </div>
+
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="icon-bar">
+        <form action="index.html"><button class="btn active  float-left" onclick=""><i class="fa fa-home"></i></button></form>
+        <form action="search.html"> <button class="btn  float-left" ><i class="fa fa-search"></i></button></form>
+        <form action="cart.html"><button class="btn float-left"><i class="fa fa-shopping-bag"></i></button></form>
+        <form action="account.html"><button class="btn float-left"><i class="fa fa-user"></i></button></form>
+          </div>
+    </footer>
+    </body>
+    </html>
