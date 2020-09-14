@@ -56,11 +56,13 @@ body {
     background-color: #f1f1f1;
     cursor: pointer;
     font-size: 15px;
+    border-radius: 0%;
   }
 
 
   .icon-bar a:hover {
     color: white;
+    text-decoration: none;
     background-color: #000; /* Add a hover color */
   }
   
@@ -69,12 +71,6 @@ body {
     color: white;
   }  
 
-svg {
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-    fill: black;
-}
 
 .logofooter , .search, .user, .cart{
     display: inline-block;
@@ -126,7 +122,7 @@ svg {
   box-shadow: 3px 3px 4px 0 gray;
 }
 
-.main-content a:active {
+.main-content a:hover {
   text-decoration: none;
 }
 
